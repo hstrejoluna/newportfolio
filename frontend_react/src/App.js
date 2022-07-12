@@ -6,11 +6,17 @@ import "./App.scss";
 
 export const ThemeContext = createContext(null);
 
-const toggleTheme = () => {
-  setTheme((curr) => (curr === "light" ? "dark" : "light"));
-};
+
+
 
 const App = () => {
+
+  const [theme, setTheme] = useState("dark");
+
+
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === "light" ? "dark" : "light"));
+  };
   return (
     <div className='app' id={theme}>
       <Navbar />
