@@ -15,10 +15,10 @@ const About = () => {
   return (
     <>
       <h2 className="head-text">
-        I know that
+        I know that 
         <span>Good Design</span>
         <br />
-        means
+        means 
         <span>Good Business</span>
       </h2>
 
