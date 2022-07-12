@@ -168,3 +168,24 @@
     display: none;
   }
 }
+
+#dark {
+  .app__navbar {
+    background: rgba(0, 0, 0, 0.25);
+    color: white;
+    a {
+      color: rgba(255, 255, 255, 0.658);
+      &:hover {
+        color: white;
+      }
+    }
+
+    li {
+      &:hover {
+        div {
+          background: #fec260;
+        }
+      }
+    }
+  }
+}
