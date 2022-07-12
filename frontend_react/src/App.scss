@@ -6,11 +6,21 @@
 // dark/night mode toggle
 #dark {
   background-color: var(--primary-dark-color);
-  .p-text{
+  .p-text {
     color: white;
   }
 
- 
+  .bold-text{
+    color: #fec260;
+  }
+
+  .head-text {
+    color: white;
+
+    span {
+      color: #fec260;
+    }
+  }
 }
 
 .app__whitebg {
