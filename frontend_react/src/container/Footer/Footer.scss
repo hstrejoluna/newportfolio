@@ -128,3 +128,15 @@
     margin: 1rem 0;
   }
 }
+
+#dark {
+  .app__footer-card {
+    background-color: var(--light-purple-color);
+  }
+
+  .app__footer-form {
+    input, textarea {
+      background-color: var(--light-purple-color);
+    }
+  }
+}
