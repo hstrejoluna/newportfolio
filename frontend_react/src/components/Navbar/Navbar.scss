@@ -187,5 +187,20 @@
         }
       }
     }
+    .app__navbar-menu {
+      background: var(--secondary-dark-color);
+
+      div {
+        background: var(--background-dark);
+        background-color: (var(--purple-color));
+      }
+
+      svg {
+        color: white;
+       
+      }
+    }
+
+  
   }
 }

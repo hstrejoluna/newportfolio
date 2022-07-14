@@ -1,4 +1,5 @@
 #home {
+  z-index: 10;
   // disable the default padding styles
   .app__wrapper {
     padding: 0;
@@ -11,6 +12,7 @@
 }
 
 .app__header {
+  
   flex: 1;
   background: var(--background-light);
   position: relative;

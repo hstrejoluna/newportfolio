@@ -42,6 +42,23 @@
   .app__primarybg {
     background-color: var(--primary-dark-color);
   }
+
+  .app__social{
+    div{
+      background-color: var(--light-purple-color);
+      border: 1px solid var(--purple-color);
+
+      &:hover{
+        background-color: var(--accent-color);
+      
+
+        svg{
+          fill: var(--secondary-dark-color);
+        }
+      }
+
+    }
+  }
 }
 
 .app__whitebg {
