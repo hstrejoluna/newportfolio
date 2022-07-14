@@ -1,29 +1,46 @@
 .app {
   background-color: var(--primary-color);
   font-family: var(--font-base);
+  transition: all 1s ease-in-out;
 }
 
 // dark/night mode toggle
 #dark {
+
   background-color: var(--primary-dark-color);
   .p-text {
+    transition: all 1s ease-in-out;
     color: white;
   }
 
   .bold-text{
+    transition: all 1s ease-in-out;
     color: #fec260;
   }
 
   .head-text {
+    transition: all 1s ease-in-out;
     color: white;
 
     span {
+      transition: all 1s ease-in-out;
       color: #fec260;
     }
   }
 
   .app__navigation-dot{
     background-color: #A12568;
+    &:hover {
+      background-color: var(--secondary-dark-color);
+    }
+  }
+
+  .app__whitebg {
+    background-color: var(--light-purple-color);
+  }
+
+  .app__primarybg {
+    background-color: var(--primary-dark-color);
   }
 }
 
@@ -79,10 +96,12 @@
   font-size: 2.75rem;
   font-weight: 800;
   text-align: center;
+  transition: all 1s ease-in-out;
   color: var(--black-color);
-  text-transform: capitalize;
+  
 
   span {
+    transition: all 1s ease-in-out;
     color: var(--secondary-color);
   }
 
@@ -96,6 +115,7 @@
 }
 
 .p-text {
+  transition: all 1s ease-in-out;
   font-size: 0.8rem;
   text-align: left;
   color: var(--gray-color);
@@ -107,6 +127,7 @@
 }
 
 .bold-text {
+  transition: all 1s ease-in-out;
   font-size: 1rem;
   font-weight: 800;
   color: var(--black-color);

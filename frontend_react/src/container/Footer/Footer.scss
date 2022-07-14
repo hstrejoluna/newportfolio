@@ -116,6 +116,7 @@
     font-family: var(--font-base);
 
     transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    transition: all 1s ease-in-out;
     cursor: pointer;
 
     &:hover {
@@ -130,13 +131,16 @@
 }
 
 #dark {
+  button{
+    background-color: var( --accent-color);  
+  }
   .app__footer-card {
-    background-color: var(--light-purple-color);
+    background-color: var(--purple-color);
   }
 
   .app__footer-form {
     input, textarea {
-      background-color: var(--light-purple-color);
+      background-color: var(--purple-color);
     }
   }
 }

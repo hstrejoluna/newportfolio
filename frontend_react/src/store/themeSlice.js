@@ -10,11 +10,9 @@ const themeSlice = createSlice({
   reducers: {
     setDarkTheme(state) {
       state.darkmode = true;
-      console.log(state);
     },
     setDefaultTheme(state) {
       state.darkmode = false;
-      console.log(state);
     },
   },
 });

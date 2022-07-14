@@ -1,17 +1,10 @@
 import React, { useState, createContext } from "react";
 import { useSelector } from "react-redux";
  
-
 import { About, Footer, Header, Skills, Testimonial, Work } from "./container";
 import { Navbar } from "./components";
 
-
 import "./App.scss";
-
-// export const ThemeContext = createContext(null);
-
-
-
 
 const App = () => {
 
