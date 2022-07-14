@@ -4,6 +4,7 @@
   "license": "GPL-2.0",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.3",
     "@sanity/client": "^3.3.2",
     "@sanity/image-url": "^1.0.1",
     "@testing-library/jest-dom": "^5.16.4",

@@ -1,24 +1,27 @@
 import React, { useState, createContext } from "react";
+import { useSelector } from "react-redux";
+ 
+
 import { About, Footer, Header, Skills, Testimonial, Work } from "./container";
 import { Navbar } from "./components";
 
+
 import "./App.scss";
 
-export const ThemeContext = createContext(null);
+// export const ThemeContext = createContext(null);
 
 
 
 
 const App = () => {
 
-  const [theme, setTheme] = useState("dark");
+  let themeid = "light";
+  const theme = useSelector((state) => state.theme);
+  {!theme.darkmode ? themeid = "light" : themeid = "dark"}
 
 
-  const toggleTheme = () => {
-    setTheme((curr) => (curr === "light" ? "dark" : "light"));
-  };
   return (
-    <div className='app' id={theme}>
+    <div className='app' id={themeid}>
       <Navbar />
       <Header />
       <About />
