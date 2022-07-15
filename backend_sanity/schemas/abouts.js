@@ -18,9 +18,21 @@ export default{
             title:'ImgUrl',
             type: 'image',
             options: {
-              hotspot: true,
+              hotspot: false,
             },
         },
-        
+        {
+            name:'imgUrlNight',
+            title:'ImgUrlNight',
+            type: 'image',
+            options: {
+              hotspot: false,
+            },
+        },
+        {
+            name:'imgSrc',
+            title:'ImgSrc',
+            type:'string'
+        },
     ]
 }
