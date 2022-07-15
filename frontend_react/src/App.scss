@@ -6,14 +6,13 @@
 
 // dark/night mode toggle
 #dark {
-
   background-color: var(--primary-dark-color);
   .p-text {
     transition: all 1s ease-in-out;
     color: white;
   }
 
-  .bold-text{
+  .bold-text {
     transition: all 1s ease-in-out;
     color: #fec260;
   }
@@ -28,8 +27,8 @@
     }
   }
 
-  .app__navigation-dot{
-    background-color: #A12568;
+  .app__navigation-dot {
+    background-color: #a12568;
     &:hover {
       background-color: var(--secondary-dark-color);
     }
@@ -43,22 +42,27 @@
     background-color: var(--primary-dark-color);
   }
 
-  .app__social{
-    div{
+  .app__social {
+    div {
       background-color: var(--light-purple-color);
       border: 1px solid var(--purple-color);
 
-      &:hover{
+      &:hover {
+        cursor: pointer;
         background-color: var(--accent-color);
-      
 
-        svg{
+        svg {
           fill: var(--secondary-dark-color);
         }
       }
-
     }
   }
+}
+
+.app__anchor-social {
+  color: transparent;
+  font-size: 30px;
+  position: absolute;
 }
 
 .app__whitebg {
@@ -115,7 +119,6 @@
   text-align: center;
   transition: all 1s ease-in-out;
   color: var(--black-color);
-  
 
   span {
     transition: all 1s ease-in-out;
@@ -168,8 +171,8 @@
   padding: 1rem;
 
   div {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: var(--white-color);
     margin: 0.25rem 0;
@@ -182,8 +185,8 @@
     transition: all 0.3s ease-in-out;
 
     svg {
-      width: 15px;
-      height: 15px;
+      width: 35px;
+      height: 25px;
       color: var(--gray-color);
     }
 
