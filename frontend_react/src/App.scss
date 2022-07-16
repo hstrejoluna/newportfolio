@@ -59,6 +59,11 @@
   }
 }
 
+.app__inner{
+    overflow: hidden;
+    transition: max-height 0.2s ease;
+}
+
 .app__anchor-social {
   color: transparent;
   font-size: 30px;
@@ -249,5 +254,26 @@
 
   .copyright {
     padding: 2rem;
+  }
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--secondary-color);
+
+  font-weight: 500;
+  color: var(--white-color);
+  outline: none;
+  margin: 1rem 0 0 0;
+  font-family: var(--font-base);
+
+  transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #2430af;
   }
 }
