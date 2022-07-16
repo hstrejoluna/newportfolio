@@ -10,17 +10,7 @@ import "./Work.scss";
 
 const MAX_POSSIBLE_HEIGHT = 500;
 
-const styles = {
-  container: {
-    width: 300,
-    margin: "0 auto",
-  },
-  card: {
-    backgroundColor: "#B7E0F2",
-    borderRadius: 55,
-    padding: "3rem",
-  },
-};
+ 
 
 const ExpendableText = ({ maxHeight, children }) => {
   const ref = useRef();

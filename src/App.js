@@ -1,4 +1,4 @@
-import React, { useState, createContext } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
  
 import { About, Footer, Header, Skills, Testimonial, Work } from "./container";
@@ -8,9 +8,10 @@ import "./App.scss";
 
 const App = () => {
 
+
   let themeid = "light";
   const theme = useSelector((state) => state.theme);
-  {!theme.darkmode ? themeid = "light" : themeid = "dark"}
+  !theme.darkmode ? themeid = "light" : themeid = "dark"
 
 
   return (
