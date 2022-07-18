@@ -14,6 +14,9 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const theme = useSelector((state) => state.theme);
 
+  
+
+
   return (
     <nav className='app__navbar'>
       <div className='app__navbar-logo'>
@@ -43,7 +46,7 @@ const Navbar = () => {
 
         {toggle && (
           <motion.div
-            whileInView={{ x: [300, 0] }}
+            whileInView={{ x: [90, 0] }}
             transition={{ duration: 0.85, ease: "easeOut" }}
           >
             <HiX onClick={() => setToggle(false)} />
